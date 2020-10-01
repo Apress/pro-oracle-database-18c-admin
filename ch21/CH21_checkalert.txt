@@ -1,0 +1,11 @@
+#-----------------------------------------------------------#
+# view alert log
+  function valert {
+  if [ "$ORACLE_SID" = "O18C" ]; then
+    view /orahome/app/oracle/diag/rdbms/o18c/O18C/trace/alert_O18C.log
+  elif [ "$ORACLE_SID" = "O12C" ]; then
+    view /orahome/app/oracle/diag/rdbms/o12c/O12C/trace/alert_O12C.log
+  fi
+  } # valert
+#-----------------------------------------------------------#
+
